@@ -9,7 +9,7 @@ Context::Context(State *state)
 void Context::TransitionTo(State *state)
 {
     cout << "hi alireza\n"; 
-    if(this->state_ !=nullptr)
+    if(this->state_ != nullptr)
         delete this->state_;
     this->state_ = state;
     this->state_->set_context(this);
