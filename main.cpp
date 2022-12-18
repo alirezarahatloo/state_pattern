@@ -5,7 +5,7 @@
 int main()
 {
     std::cout  << "hello world\n";
-    State1 obj;
-    obj.Handle1();
+    Context *obj = new Context(new State1);
+    obj->Request1();
     return 0;
 }
